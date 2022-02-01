@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Pixel JS</title>
+</head>
+<body>
+    <h1>Pixel JS</h1>
+    <div class="ui">
+        <div class="ui-toolbar">
+            <h2 class="toolbar-title">Toolbox</h2>
+            <div>
+                <input class="color-picker" type="color" id="color" value="#000000">
+            </div>
+            <button class="reset">Reset</button>
+            <button class="eraser">Eraser</button>
+            <button class="random">Random Color</button>
+            <div class="slidercontainer">
+                <p class="counter"></p>
+                <input type="range" min="1" max="64" value="16" class="slider">
+            </div>
+        </div>
+        <div class="ui-sketch">
+            <div class="sketch-pad"></div>
+        </div>
+    </div>
+</body>
+</html>

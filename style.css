@@ -1,0 +1,101 @@
+* {
+    box-sizing:border-box;
+    font-family: 'VT323', monospace;
+}
+body {
+    margin:0;
+    height: 100vh;
+}
+h1 {
+    font-size: 15vh;
+    text-shadow: 5px 5px black;
+    margin: 0 ;
+    text-align: center;
+    background: -webkit-linear-gradient(gray, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ui {
+    height: 82vh;
+    display: flex;
+    padding: 0 200px;
+}
+.ui-toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    border: 3px solid black;
+    border-radius: 20px 0 0 0;
+    box-shadow: 4px 5px black;
+    margin-bottom: 12px;
+    gap: 24px;
+}
+.slidercontainer {
+    padding: 12px 24px;
+    box-shadow: 4px 5px black;
+    border: 2px solid black;
+}
+.slidercontainer > *{
+    margin: 0;
+}
+.counter {
+    text-align: center;
+    font-size: 24px;
+}
+.toolbar-title {
+    font-size: 64px;
+    margin: 0;
+}
+.color-picker {
+    background:white;
+    border: 0;
+    height: 15vh;
+    width: 15vh;
+}
+.reset {
+    font-size: 4vh;
+    border: 2px solid black;
+    box-shadow: 3px 0 black;
+    background-color: white;
+    padding: 8px 62.5px;
+}
+.eraser {
+    font-size: 4vh;
+    border: 2px solid black;
+    box-shadow: 3px 0 black;
+    background-color: white;
+    padding: 8px 57px;    
+}
+.random {
+    font-size: 4vh;
+    border: 2px solid black;
+    box-shadow: 2.5px 0 black;
+    background-color: white;
+    padding: 8px 24px;
+}
+
+.ui-sketch {
+    display: flex;
+    flex: 1 0 auto;
+    width: 50vh;
+    margin-left: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.sketch-pad {
+    border: 2px solid black;
+    box-shadow: 3px 2px black;
+    height:75vh;
+    width: 75vh;
+    display: flex;
+}
+.sketch-pad > * {
+    flex: 1 1 0;
+    display: grid;
+}
+.gridbox {
+    border: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+}
