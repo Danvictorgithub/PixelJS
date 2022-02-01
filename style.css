@@ -17,6 +17,7 @@ h1 {
 }
 .ui {
     height: 82vh;
+    flex-wrap: wrap;
     display: flex;
     padding: 0 200px;
 }
@@ -79,11 +80,11 @@ h1 {
     display: flex;
     flex: 1 0 auto;
     width: 50vh;
-    margin-left: 24px;
     justify-content: center;
     align-items: center;
 }
 .sketch-pad {
+    flex: 0 0 auto;
     border: 2px solid black;
     box-shadow: 3px 2px black;
     height:75vh;
@@ -91,7 +92,7 @@ h1 {
     display: flex;
 }
 .sketch-pad > * {
-    flex: 1 1 0;
+    flex: 1 0 auto;
     display: grid;
 }
 .gridbox {

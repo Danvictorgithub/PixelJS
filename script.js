@@ -17,10 +17,13 @@ function addGrid() { //Generates Grid and Color Event Listeners
     const gridBoxes = document.querySelectorAll('.gridbox');
     gridBoxes.forEach((gridBox) => {
         gridBox.addEventListener('mouseover',updateColor);
+        gridBox.addEventListener('mousedown',(e) => {
+            e.target.style['background-color'] = `${colorPicker.value}`;    
+        });
     });
 }
 function updateColor(e) {
-        e.target.style['background-color'] = `${colorPicker.value}`;
+    if (toggleDraw) e.target.style['background-color'] = `${colorPicker.value}`;
 }
 //UI DOM Selectors
 const slider = document.querySelector('.slider');
@@ -29,6 +32,7 @@ const sketchPad = document.querySelector('.sketch-pad');
 const colorPicker = document.querySelector('.color-picker');
 const reset = document.querySelector('.reset');
 const eraser = document.querySelector('.eraser')
+let toggleDraw = false;
 
 //Default Parameters on Start
 let gridGen = slider.value;
@@ -44,4 +48,6 @@ slider.addEventListener('input',(e) => {
 });
 reset.addEventListener('click',addGrid); //Reset
 eraser.addEventListener('click',() => colorPicker.value = '#FFFFFF');
+document.addEventListener('mousedown', () => toggleDraw = true);
+document.addEventListener('mouseup', () => toggleDraw = false )
 
